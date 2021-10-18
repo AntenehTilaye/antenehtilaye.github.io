@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/aos.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="item">
+            <a href="#home">
+                <span class="text">
+                Home
+            </span>
+                <span class="material-icons-outlined">
+                home
+            </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#about">
+                <span class="text">
+                About
+            </span>
+                <span class="material-icons-outlined">
+                info
+            </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#project">
+                <span class="text">
+                Projects
+            </span>
+                <span class="material-icons-outlined">
+                checklist
+            </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#service">
+                <span class="text">
+                Services
+            </span>
+                <span class="material-icons-outlined">
+                work
+            </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#contact">
+                <span class="text">
+                Contact
+            </span>
+                <span class="material-icons-outlined">
+                contact_mail
+            </span>
+            </a>
+        </div>
+    </div>
+    <div class="back">
+        <div data-aos="zoom-in">Software Engineer</div>
+        <div data-aos="zoom-in">ML & DL & CV</div>
+    </div>
+    <div class="color_switch" data-aos="fade-right">
+        <div class="color_one" id="white" onclick="changeTheme(0)">
+
+        </div>
+        <div class="color_one" id="black" onclick="changeTheme(1)">
+
+        </div>
+        <div class="color_one" id="purple" onclick="changeTheme(2)">
+
+        </div>
+        <div class="color_one" id="green" onclick="changeTheme(3)">
+
+        </div>
+    </div>
+    <div class="section intro" id="home">
+
+        <div class="image" data-aos="zoom-in-left">
+            <img src="assets/images/n.png" alt="">
+        </div>
+        <div class="text" data-aos="zoom-in-right">
+            <h4>Hi, I'm</h4>
+            <h3>
+                <div id="text"></div>
+                <div id="cursor"></div>
+            </h3>
+            <div class="button_holder">
+                <a href="#about" class="button">Gets started</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section about_holder" id="about">
+        <h1 class="section_title" data-aos="fade-right">
+            About Me
+        </h1>
+        <div class="about">
+            <div class="about_item" data-aos="fade-up">
+
+                <div class="about_text aniview" data-av-animation="bounceInLeft">
+                    I have a <span class="high">BSc Degree</span> in <span class="high">Software Engineering</span> and <span class="high">MSc</span> Degree in <span class="high">Computer Science And Engineering</span> focusing on computer vision and
+                    robotics area. I specialize in Software Engineering including, but not limmited to, <span class="high">Web App</span> Development using php, Java, python and Dart (Flutter), <span class="high">Mobile App</span> Development using Material
+                    Design, and Flutter, Machine learning Deep Learning, and Computer Vision Powered Apps.
+                </div>
+            </div>
+            <div class="about_item" data-aos="fade-up">
+                <img src="assets/images/coding.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="section projects_holder" id="project">
+        <h1 class="section_title" data-aos="fade-right">
+            Projects
+        </h1>
+        <div class="projects">
+            <script src="assets/data/projects.js"></script>
+            <script>
+                for (let project in projects) {
+                    document.write(
+                        `
+                    <div class="project" data-aos="fade-up">
+                        <div class="info">
+                            <div class="text">
+                                ` + projects[project]['title'].substring(0, 200) + " ..." + `
+                            </div>
+                            <a onclick="changePage('` + project + `')" class="btn">More</a>
+                        </div>
+                        <div class="img_contianer">
+                            <img src="` + projects[project]['best_sample'] + `" alt="">
+                        </div>
+                    </div>
+                    `
+                    );
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="section" id="service">
+        <h1 class="section_title" data-aos="fade-right">
+            Services
+        </h1>
+        <div class="services">
+            <div class="left_arrow arrow">
+                <span class="material-icons-outlined " id="leftArrow">
+                arrow_back_ios
+            </span>
+            </div>
+            <div class="service_holder" data-aos="zoom-in">
+                <div class="service_holder2" id="service_holder2">
+                    <div class="service">
+                        <div class="service_img">
+                            <img src="assets/images/pro.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                Web Application Development
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non voluptate voluptas modi quos dolor nemo numquam laudantium nobis? Fugit dolore reiciendis possimus atque unde explicabo qui veniam amet excepturi?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service_img">
+                            <img src="assets/images/pro.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                Web Application Development
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non voluptate voluptas modi quos dolor nemo numquam laudantium nobis? Fugit dolore reiciendis possimus atque unde explicabo qui veniam amet excepturi?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service_img">
+                            <img src="assets/images/pro.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                Web Application Development
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non voluptate voluptas modi quos dolor nemo numquam laudantium nobis? Fugit dolore reiciendis possimus atque unde explicabo qui veniam amet excepturi?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service_img">
+                            <img src="assets/images/pro.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                Web Application Development
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non voluptate voluptas modi quos dolor nemo numquam laudantium nobis? Fugit dolore reiciendis possimus atque unde explicabo qui veniam amet excepturi?
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right_arrow arrow">
+                <span class="material-icons-outlined " id="rightArrow">
+                arrow_forward_ios
+            </span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section contacts" id="contact">
+        <h1 class="section_title" data-aos="fade-right">
+            Contact Me
+        </h1>
+        <div class="contactme">
+            <div class="theForm" data-aos="fade-up">
+                <form action="#" method="post">
+                    <input type="text" class="input_f" placeholder="You Email Address">
+                    <input type="text" class="input_f" placeholder="Subject">
+                    <textarea class="input_a" rows="5" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send" class="input_b">
+
+                </form>
+            </div>
+            <div class="theLinks" data-aos="fade-down">
+                <div class="item">
+                    <a href="#">
+                        <img src="assets/images/facebook.png" alt="Facebook" class="img-icons">
+                        <span class="text">
+                            /alex.tilaye1
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="assets/images/telegram.png" alt="Facebook" class="img-icons">
+                        <span class="text">
+                            @blackboy_ante
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="assets/images/github.png" alt="Facebook" class="img-icons">
+                        <span class="text">
+                            Github
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="assets/images/linkedin.png" alt="Facebook" class="img-icons">
+                        <span class="text">
+                            LinkedIn
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="contact_img" data-aos="fade-up">
+                <img src="assets/images/program.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer" data-aos="fade-up" data-aos-offset="-400">
+        <div class="copy">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            | Anteneh Tilaye
+        </div>
+        <div class="email">When Ever you are ready, here is my Email : Antenehtilaye19@gmail.com</div>
+    </div>
+    <script src="assets/script/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            changeTheme(getCookie('theme'));
+        });
+    </script>
+    <script src="assets/script/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
+    <script src="assets/script/swup.min.js"></script>
+    <script src="assets/script/tool.js"></script>
+
+</body>
+
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+</html>

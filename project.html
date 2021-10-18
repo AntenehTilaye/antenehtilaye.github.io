@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/aos.css">
+    <script src="assets/script/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="color_switch" data-aos="fade-right">
+        <div class="color_one" id="white" onclick="changeTheme(0)">
+
+        </div>
+        <div class="color_one" id="black" onclick="changeTheme(1)">
+
+        </div>
+        <div class="color_one" id="purple" onclick="changeTheme(2)">
+
+        </div>
+        <div class="color_one" id="green" onclick="changeTheme(3)">
+
+        </div>
+    </div>
+    <script src="assets/data/projects.js"></script>
+    <script>
+        $(document).ready(function() {
+            changeTheme(getCookie('theme'));
+            theProject = getCookie('sel_project');
+            document.getElementById('project_title').innerHTML = projects[theProject]['title'];
+            document.getElementById('project_text').innerHTML = `<div class="intro_title">Intro</div>` + projects[theProject]['intro'];
+            document.getElementById('project_image').innerHTML = `<img src="` + projects[theProject]['intro_img'] + `">`;
+            for (let sample of projects[theProject]['sample']) {
+                theList = "";
+                for (let desc of sample['sample_text']) {
+                    theList = theList +
+                        `
+                        <div class="sample_list">
+                            ` + desc + `
+                        </div>
+                    `;
+                }
+                document.getElementById('project_sample').innerHTML = document.getElementById('project_sample').innerHTML +
+                    `
+                    <div class="one_sample">
+                        <div class="sample_image" data-aos="fade-up-left">
+                            <img src="` + sample['sample_img'] + `" alt="">
+                        </div>
+                        <div class="sample_text" data-aos="fade-right">
+                            ` + theList + `
+                        </div>
+                    </div>
+                    `;
+            }
+        });
+    </script>
+    <div class="section project_intro" id="project_intro">
+        <div class="project_nav" id="project_nav" data-aos="fade-right">
+            <span class="material-icons-outlined">
+                arrow_back
+            </span>
+        </div>
+        <div class="project_title" id="project_title" data-aos="fade-left">
+
+        </div>
+        <div class="project_intro2">
+            <div class="project_text" id="project_text" data-aos="fade-right">
+            </div>
+            <div class="project_image" id="project_image" data-aos="fade-up-left">
+
+            </div>
+        </div>
+    </div>
+    <div class="section project_sample" id="project_sample">
+
+    </div>
+
+    <div class="footer" data-aos="fade-up" data-aos-offset="-400">
+        <div class="copy">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            | Anteneh Tilaye
+        </div>
+        <div class="email">When Ever you are ready, here is my Email : Antenehtilaye19@gmail.com</div>
+    </div>
+    <script src="assets/script/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
+    <script src="assets/script/swup.min.js"></script>
+    <script src="assets/script/tool.js"></script>
+
+</body>
+
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+</html>

@@ -1,0 +1,92 @@
+{
+    "project1": {
+        "title": "Object Detection for Mobile Robot Navigation",
+        "intro": "Mobile robots do not come with heavy computing power so the detection algorithm response time should be sufficient enough that the robots can make a decision fairly quickly. Multiple object recognition and localization for mobile robot navigation in a dynamic indoor environment are proposed in this study. The algorithm detects an object by combining deep features for recognition and local features for localization. For recognition of multiple objects, a CNN based Deep learning model that uses MobilenetV2 as a base network with a sigmoid classification layer is developed. The model generates a probability for each object in the image independently, which is used for localizing the recognized object in the image. ORB+SURF is used as a feature extractor to generate a bounding box for each object. ORB+SURF is compared with different feature detection and descriptor combination to evaluate its performance. The object detection algorithm is also integrated with ROS to evaluate the performance in a real-world scenario and in doing so the distance information is also extracted from the Laser distance sensor mounted on the top of Turtlebot.",
+        "intro_img": "assets/images/coding.png",
+        "sample": [{
+                "sample_img": "assets/images/program.png",
+                "sample_text": [
+                    "this is one describtion of the sample",
+                    "this is another one describtion of the sample describtion of the sample",
+                    "this is also another one describtion of the sample"
+                ]
+            },
+            {
+                "sample_img": "assets/images/program.png",
+                "sample_text": [
+                    "this is one describtion of the sample",
+                    "this is another one describtion of the sample describtion of the sample",
+                    "this is also another one describtion of the sample"
+                ]
+            },
+            {
+                "sample_img": "assets/images/program.png",
+                "sample_text": [
+                    "this is one describtion of the sample",
+                    "this is another one describtion of the sample describtion of the sample",
+                    "this is also another one describtion of the sample"
+                ]
+            }
+        ]
+    },
+    "project2": {
+        "title": "Object Detection for Mobile Robot Navigation",
+        "intro": "Mobile robots do not come with heavy computing power so the detection algorithm response time should be sufficient enough that the robots can make a decision fairly quickly. Multiple object recognition and localization for mobile robot navigation in a dynamic indoor environment are proposed in this study. The algorithm detects an object by combining deep features for recognition and local features for localization. For recognition of multiple objects, a CNN based Deep learning model that uses MobilenetV2 as a base network with a sigmoid classification layer is developed. The model generates a probability for each object in the image independently, which is used for localizing the recognized object in the image. ORB+SURF is used as a feature extractor to generate a bounding box for each object. ORB+SURF is compared with different feature detection and descriptor combination to evaluate its performance. The object detection algorithm is also integrated with ROS to evaluate the performance in a real-world scenario and in doing so the distance information is also extracted from the Laser distance sensor mounted on the top of Turtlebot.",
+        "intro_img": "assets/images/coding.png",
+        "sample": [{
+                "sample_img": "assets/images/program.png",
+                "sample_text": [
+                    "this is one describtion of the sample",
+                    "this is another one describtion of the sample describtion of the sample",
+                    "this is also another one describtion of the sample"
+                ]
+            },
+            {
+                "sample_img": "assets/images/program.png",
+                "sample_text": [
+                    "this is one describtion of the sample",
+                    "this is another one describtion of the sample describtion of the sample",
+                    "this is also another one describtion of the sample"
+                ]
+            },
+            {
+                "sample_img": "assets/images/program.png",
+                "sample_text": [
+                    "this is one describtion of the sample",
+                    "this is another one describtion of the sample describtion of the sample",
+                    "this is also another one describtion of the sample"
+                ]
+            }
+        ]
+    },
+    "project3": {
+        "title": "Object Detection for Mobile Robot Navigation",
+        "intro": "Mobile robots do not come with heavy computing power so the detection algorithm response time should be sufficient enough that the robots can make a decision fairly quickly. Multiple object recognition and localization for mobile robot navigation in a dynamic indoor environment are proposed in this study. The algorithm detects an object by combining deep features for recognition and local features for localization. For recognition of multiple objects, a CNN based Deep learning model that uses MobilenetV2 as a base network with a sigmoid classification layer is developed. The model generates a probability for each object in the image independently, which is used for localizing the recognized object in the image. ORB+SURF is used as a feature extractor to generate a bounding box for each object. ORB+SURF is compared with different feature detection and descriptor combination to evaluate its performance. The object detection algorithm is also integrated with ROS to evaluate the performance in a real-world scenario and in doing so the distance information is also extracted from the Laser distance sensor mounted on the top of Turtlebot.",
+        "intro_img": "assets/images/coding.png",
+        "sample": [{
+                "sample_img": "assets/images/program.png",
+                "sample_text": [
+                    "this is one describtion of the sample",
+                    "this is another one describtion of the sample describtion of the sample",
+                    "this is also another one describtion of the sample"
+                ]
+            },
+            {
+                "sample_img": "assets/images/program.png",
+                "sample_text": [
+                    "this is one describtion of the sample",
+                    "this is another one describtion of the sample describtion of the sample",
+                    "this is also another one describtion of the sample"
+                ]
+            },
+            {
+                "sample_img": "assets/images/program.png",
+                "sample_text": [
+                    "this is one describtion of the sample",
+                    "this is another one describtion of the sample describtion of the sample",
+                    "this is also another one describtion of the sample"
+                ]
+            }
+        ]
+    }
+}
