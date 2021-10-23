@@ -35,6 +35,9 @@
             document.getElementById('project_title').innerHTML = projects[theProject]['title'];
             document.getElementById('project_text').innerHTML = `<div class="intro_title">Intro</div>` + projects[theProject]['intro'];
             document.getElementById('project_image').innerHTML = `<img src="` + projects[theProject]['intro_img'] + `">`;
+
+
+
             for (let sample of projects[theProject]['sample']) {
                 theList = "";
                 for (let desc of sample['sample_text']) {
@@ -57,6 +60,23 @@
                     </div>
                     `;
             }
+
+            if (theProject == "project3") {
+                document.getElementById('project_sample').innerHTML = document.getElementById('project_sample').innerHTML +
+                    `
+                    <div class="one_sample">
+                        <div class="sample_image" data-aos="fade-up-left">
+                            <iframe width="681" height="383" src="https://www.youtube.com/embed/CHh0Q9maj-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="sample_text" data-aos="fade-right">
+                            <div class="sample_list">
+                                Check Out The Demo
+                            </div>
+                        </div>
+                    </div>
+                    `;
+            }
+
         });
     </script>
     <div class="section project_intro" id="project_intro">
