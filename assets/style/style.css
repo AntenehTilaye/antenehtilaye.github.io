@@ -50,19 +50,6 @@
     --mouse-y: 0;
 }
 
-.root {
-    --font-color: black;
-    --font-color-shade: rgb(59, 59, 59);
-    --font-color-shade2: rgb(121, 120, 120);
-    --back-color: rgb(255, 255, 255);
-    --back-color-shade: #d7dbe2;
-    --border-color: #b4b4b4;
-    --border-color2: #d4d3d3;
-    --back-color-op: rgba(24, 24, 24, 0.623);
-    --mouse-x: 0;
-    --mouse-y: 0;
-}
-
 html {
     scroll-behavior: smooth;
     margin: 0px;
